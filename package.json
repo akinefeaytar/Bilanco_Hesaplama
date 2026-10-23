@@ -1,0 +1,75 @@
+{
+  "name": "bilanx",
+  "version": "1.0.0",
+  "description": "Bilanx - Modern Finansal Raporlama, Mizan Analizi ve Bilanço Otomasyonu",
+  "author": "Akin Efe Aytar (https://github.com/akinefeaytar)",
+  "homepage": "https://github.com/akinefeaytar/bilanx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akinefeaytar/bilanx.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:all": "electron-builder -mw"
+  },
+  "build": {
+    "appId": "com.akinefeaytar.bilanx",
+    "productName": "Bilanx",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "icon.png",
+      "icon.ico",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.finance",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["universal", "arm64", "x64"]
+        },
+        {
+          "target": "zip",
+          "arch": ["universal", "arm64", "x64"]
+        }
+      ],
+      "icon": "icon.png"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Bilanx"
+    }
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3"
+  }
+}

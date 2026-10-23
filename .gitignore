@@ -1,0 +1,12 @@
+# Dependencies & Build Outputs
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Örnek ve Özel Mizan / Bilanço Dosyaları (Kişisel/Şirket verilerini gizleme)
+*.xls
+*.xlsx
+
+# Eski Windows derleme çıktıları
+*win32-x64*
