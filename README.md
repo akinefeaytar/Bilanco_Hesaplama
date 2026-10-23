@@ -17,6 +17,21 @@
 
 ---
 
+## 📥 Uygulamayı İndir (Doğrudan Kurulum)
+
+Uygulamayı kodlarla uğraşmadan doğrudan bilgisayarınıza indirip kurabilirsiniz:
+
+| İşletim Sistemi | İndirme Bağlantısı | Açıklama |
+| :--- | :--- | :--- |
+| 🍏 **macOS (Apple Silicon)** | [**Bilanx-1.0.0-arm64.dmg İndir**](https://github.com/akinefeaytar/bilanx/releases/download/v1.0.0/Bilanx-1.0.0-arm64.dmg) | M1, M2, M3, M4 işlemcili Mac'ler için |
+| 🍏 **macOS (Intel)** | [**Bilanx-1.0.0.dmg İndir**](https://github.com/akinefeaytar/bilanx/releases/download/v1.0.0/Bilanx-1.0.0.dmg) | Intel işlemcili Mac'ler için |
+| 🪟 **Windows (Kurulum)** | [**Bilanx.Setup.1.0.0.exe İndir**](https://github.com/akinefeaytar/bilanx/releases/download/v1.0.0/Bilanx.Setup.1.0.0.exe) | Masaüstü kısayoluyla standart kurulum |
+| 🪟 **Windows (Taşınabilir)** | [**Bilanx.1.0.0.exe İndir**](https://github.com/akinefeaytar/bilanx/releases/download/v1.0.0/Bilanx.1.0.0.exe) | Kurulumsuz, doğrudan çalışan portable sürüm |
+
+> 📌 **Tüm Sürümler ve Güncellemeler İçin:** [GitHub Releases Sayfası](https://github.com/akinefeaytar/bilanx/releases)
+
+---
+
 ## 🚀 Özellikler
 
 - **⚡ Sıfırdan Başlangıç:** Açılışta tertemiz, sıfırlanmış arayüz; anında veri yüklemeye hazır.
@@ -28,9 +43,9 @@
 
 ---
 
-## 💻 Kurulum & Çalıştırma
+## 💻 Geliştiriciler İçin Kaynak Koddan Çalıştırma
 
-Projeyi yerelinizde çalıştırmak için:
+Projeyi yerelinizde kod üzerinden çalıştırmak isterseniz:
 
 ```bash
 # Depoyu klonlayın
@@ -42,20 +57,6 @@ npm install
 
 # Masaüstü uygulamasını başlatın
 npm start
-```
-
----
-
-## 📦 Paketleme (Build)
-
-### macOS için (.dmg ve .zip):
-```bash
-npm run build:mac
-```
-
-### Windows için (.exe kurulum & taşınabilir):
-```bash
-npm run build:win
 ```
 
 ---
